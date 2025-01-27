@@ -54,8 +54,8 @@
 
         spawnWire() {
             console.log('Spawning wire');
-            const x = Phaser.Math.Between(20, 100);
-            const y = Phaser.Math.Between(20, this.sys.game.config.height);
+            const x = Phaser.Math.Between(20, this.sys.game.config.width);
+            const y = Phaser.Math.Between(20, 100);
             const wire = this.wire.create(x, y, 'wire');
             var angle = Phaser.Math.FloatBetween(0, 2*Math.PI);
 
