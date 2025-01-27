@@ -33,7 +33,7 @@
             this.wire = this.physics.add.group();
 
             this.time.addEvent({
-                delay: 500,
+                delay: 400,
                 callback: this.spawnWire,
                 callbackScope: this,
                 loop: true
@@ -59,8 +59,8 @@
             const wire = this.wire.create(x, y, 'wire');
             var angle = Phaser.Math.FloatBetween(0, 2*Math.PI);
 
-            var velocityX = Math.cos(angle)*400;
-            var velocityY = Math.sin(angle)*-400;
+            var velocityX = Math.cos(angle)*420;
+            var velocityY = Math.sin(angle)*-420;
             wire.setVelocityX(velocityX,velocityY);
             wire.setScale(0.06);
             wire.setCollideWorldBounds(true);
