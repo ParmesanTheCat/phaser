@@ -80,7 +80,9 @@
         stopGame(parm, wire) {
             this.physics.pause();
             this.scoreTimer.remove();
-            this.add.text(400,300,'Parmy chewed on wire ball game over:(', { fontSize: '64px', fill: '#ff0000' }).setOrigin(0.5);
+            this.add.text(400,300,'Parmy chewed on wire ball game over:(', { fontSize: '18px', fill: '#ff0000' }).setOrigin(0.5);
+            parm.setTint(0xff0000);
+            parm.anims.play('turn'); 
         }
 
         update ()
