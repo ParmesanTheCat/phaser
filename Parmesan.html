@@ -59,8 +59,8 @@
             const wire = this.wire.create(x, y, 'wire');
             var angle = Phaser.Math.FloatBetween(0, 2*Math.PI);
 
-            var velocityX = Math.cos(angle)*300;
-            var velocityY = Math.sin(angle)*-300;
+            var velocityX = Math.cos(angle)*400;
+            var velocityY = Math.sin(angle)*-400;
             wire.setVelocityX(velocityX,velocityY);
             wire.setScale(0.06);
             wire.setCollideWorldBounds(true);
